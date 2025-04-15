@@ -1,0 +1,18 @@
+package tech.erikaveloso.auxiliares;
+
+public enum Cargo {
+    DESENVOLVEDOR_JUNIOR,
+    DESENVOLVERDOR_SENIOR,
+    QA_JUNIOR,
+    QA_SENIOR,
+    ENGENHEIRO_JUNIOR,
+    ENGENHEIRO_SENIOR,
+    MEDICO_CARDIOLOGISTA,
+    MEDICO_PEDIATRA,
+    ADVOGADO_CIVIL,
+    ADVOGADO_CRIMINALISTA
+
+
+
+
+}
