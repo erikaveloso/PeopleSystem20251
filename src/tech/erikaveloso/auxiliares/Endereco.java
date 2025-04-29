@@ -1,19 +1,36 @@
 package tech.erikaveloso.auxiliares;
 
 public class Endereco {
-    private String rua;
+    private String logradouro;
+    private String complemento;
     private String numero;
-    private String cep;
+    private String bairro;
     private String cidade;
-    private String estado;
-    private String pais;
+    private String cep;
 
-    public String getRua() {
-        return rua;
+    public Endereco(String logradouro, String complemento, String numero, String bairro, String cidade, String cep) {
+        this.logradouro = logradouro;
+        this.complemento = complemento;
+        this.numero = numero;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.cep = cep;
     }
 
-    public void setRua(String rua) {
-        this.rua = rua;
+    public String getLogradouro() {
+        return logradouro;
+    }
+
+    public void setLogradouro(String logradouro) {
+        this.logradouro = logradouro;
+    }
+
+    public String getComplemento() {
+        return complemento;
+    }
+
+    public void setComplemento(String complemento) {
+        this.complemento = complemento;
     }
 
     public String getNumero() {
@@ -24,12 +41,12 @@ public class Endereco {
         this.numero = numero;
     }
 
-    public String getCep() {
-        return cep;
+    public String getBairro() {
+        return bairro;
     }
 
-    public void setCep(String cep) {
-        this.cep = cep;
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
     }
 
     public String getCidade() {
@@ -40,19 +57,11 @@ public class Endereco {
         this.cidade = cidade;
     }
 
-    public String getEstado() {
-        return estado;
+    public String getCep() {
+        return cep;
     }
 
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
-
-    public String getPais() {
-        return pais;
-    }
-
-    public void setPais(String pais) {
-        this.pais = pais;
+    public void setCep(String cep) {
+        this.cep = cep;
     }
 }
