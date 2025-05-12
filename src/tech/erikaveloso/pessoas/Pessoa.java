@@ -12,26 +12,14 @@ public class Pessoa {
     private String nome;
     private LocalDate dataNascimento;
     private Endereco endereco;
+
     private List<Telefone> telsContato = new ArrayList<>();
-
-    public void cadastrar(){
-
-    }
 
     public int obterIdade(){
         LocalDate dataAtual = LocalDate.now();
         Period periodo = Period.between(dataNascimento, dataAtual);
         return periodo.getYears();
     }
-
-    public Endereco getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
-    }
-
 
     public String getNome() {
         return nome;
@@ -49,12 +37,28 @@ public class Pessoa {
         this.dataNascimento = dataNascimento;
     }
 
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
     public List<Telefone> getTelsContato() {
         return telsContato;
     }
 
-    public void setTelsContato(Telefone telefone) {
+    public void setTelsContato(List<Telefone> telsContato) {
+        this.telsContato = telsContato;
+    }
+
+    public void adicionarTelefone(Telefone telefone) {
         this.telsContato.add(telefone);
     }
-}
 
+    protected Pessoa(){
+        System.out.println("Construtor de Pessoa");
+    }
+
+}
